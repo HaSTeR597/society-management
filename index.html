@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Maintenance Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Om Nilkant Co-operative Housing Society Ltd.</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('create_account') }}">Create Account</a></li>
+            <li><a href="{{ url_for('admin_login') }}">Admin Login</a></li>  <!-- Move inside <ul> -->
+        </ul>
+    </nav>
+    
+
+    <section class="features">
+        <div class="feature-box" onclick="location.href='/complaint';">
+            <i class="fas fa-exclamation-triangle icon"></i>
+            <h2>To make any complaints!</h2>
+            <p>Report issues and get them resolved quickly.</p>
+        </div>
+
+        
+        <div class="feature-box" onclick="location.href='/view-bills'">
+            <span class="icon">📑</span>
+            <h2>View/Pay the Bills</h2>
+            <p>Manage society fees and payments easily.</p>
+        </div>
+        <div class="feature-box" onclick="location.href='/announcements'">
+            <span class="icon">💬</span>
+            <h2>Announcements</h2>
+            <p>Updates of upcoming events!</p>
+        </div>
+        
+    </section>
+
+</body>
+</html>

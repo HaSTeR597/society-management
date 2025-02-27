@@ -1,0 +1,136 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/black/37_-_black.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+/* Header Styling */
+header {
+    background: rgba(0, 123, 255, 0.9); /* Slightly darker */
+    color: white;
+    padding: 20px;
+    font-size: 32px; /* Larger size */
+    font-weight: bold; /* Make it bold */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Add blending shadow */
+}
+
+/* Navbar Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+/* Feature Boxes */
+.feature-box {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #f1f1f1;
+    cursor: pointer;
+    transition: none; /* Remove hover effect */
+}
+
+/* Icons Styling */
+.icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Admin Login & Create Account Page Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Form Heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+/* Input fields */
+form input {
+    width: 300px;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+/* Button styling */
+form button {
+    width: 320px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Make it responsive */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    form input, form button {
+        width: 100%;
+    }
+}

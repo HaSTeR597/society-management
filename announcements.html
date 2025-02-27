@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url("https://cdn.photoroom.com/v2/image-cache?path=gs://background-7ef44.appspot.com/backgrounds_v3/black/37_-_black.jpg") no-repeat center center fixed;
+
+            background-size: cover;
+        }
+        h2 {
+            font-size: 2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .announcement-box {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .announcement-box h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #FFD700; /* Gold color */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<header>
+        
+    <h1>Om Nilkant Co-operative Housing Society Ltd.</h1>
+    
+</header>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/dashboard">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <h2>📢 Latest Announcements</h2>
+
+    <div class="announcement-box">
+        <h3>🎉 Website will be live soon! 🎉</h3>
+    </div>
+
+
+
+</body>
+</html>
